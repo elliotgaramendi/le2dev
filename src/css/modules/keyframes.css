@@ -1,0 +1,9 @@
+@keyframes change-length {
+  from {
+    --length: var(--initial-length);
+  }
+
+  to {
+    --length: var(--final-length);
+  }
+}

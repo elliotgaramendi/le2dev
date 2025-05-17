@@ -1,0 +1,8 @@
+.body {
+  margin: 0;
+  font-family: var(--primary-font);
+}
+
+.main *[id] {
+  scroll-margin-top: calc(var(--size) * 32);
+}
