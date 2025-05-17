@@ -12,7 +12,7 @@
   box-shadow: 0 0 calc(var(--length) * 0.5) calc(var(--length) * 0.125) var(--shadow);
   background-color: var(--color);
   backdrop-filter: blur(calc(var(--length) * 2));
-  animation: change-length linear forwards;
+  animation: change-length linear forwards, change-color linear forwards;
   animation-timeline: scroll();
   animation-range: 0 calc(var(--size) * 64);
 }
