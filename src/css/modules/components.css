@@ -26,14 +26,6 @@
       radial-gradient(circle at 20% 30%, var(--grad-primary) 0%, transparent 40%),
       radial-gradient(circle at 80% 70%, var(--grad-secondary) 0%, transparent 40%),
       linear-gradient(135deg, var(--primary-background) 0%, var(--secondary-background) 100%);
-
-    &::before {
-      background-image: radial-gradient(circle at 30% 30%, var(--grad-primary) 0%, transparent 50%);
-    }
-
-    &::after {
-      background-image: radial-gradient(circle at 70% 70%, var(--grad-secondary) 0%, transparent 60%);
-    }
   }
 
   &> :nth-child(even) {
@@ -41,16 +33,6 @@
       radial-gradient(circle at 80% 30%, var(--grad-secondary) 0%, transparent 40%),
       radial-gradient(circle at 20% 70%, var(--grad-primary) 0%, transparent 40%),
       linear-gradient(135deg, var(--secondary-background) 0%, var(--primary-background) 100%);
-
-    &::before {
-      background-image: radial-gradient(circle at 70% 30%, var(--grad-secondary) 0%, transparent 50%);
-      inset: clamp(-20rem, -15vw, -10rem) clamp(-15rem, -10vw, -5rem) auto auto;
-    }
-
-    &::after {
-      background-image: radial-gradient(circle at 30% 70%, var(--grad-primary) 0%, transparent 60%);
-      inset: auto auto clamp(-25rem, -20vw, -15rem) clamp(-20rem, -15vw, -10rem);
-    }
   }
 }
 
@@ -73,6 +55,8 @@
   position: fixed;
   inset: 0;
   display: flex;
+  width: 100%;
+  height: 100dvh;
   background-color: var(--light-shadow);
   opacity: 0;
   pointer-events: none;
@@ -112,6 +96,8 @@
 .off-canvas__backdrop {
   position: fixed;
   inset: 0;
+  width: 100%;
+  height: 100dvh;
 }
 
 .off-canvas__child {
@@ -131,6 +117,7 @@
 
 .hero__title {
   margin: 0;
+  font-weight: 800;
   font-size: clamp(2rem, 5vw, 4rem);
 }
 
@@ -171,6 +158,10 @@
   height: calc(var(--size) * 60);
   background-color: var(--primary-background);
   text-decoration: none;
+
+  & .card__body {
+    background-color: transparent;
+  }
 }
 
 .card__body {
@@ -178,6 +169,7 @@
   flex-direction: column;
   gap: var(--size);
   padding: calc(var(--size) * 4);
+  background-color: var(--secondary-background);
 }
 
 .footer {
