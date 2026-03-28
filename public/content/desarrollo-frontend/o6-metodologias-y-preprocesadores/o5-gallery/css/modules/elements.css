@@ -1,0 +1,33 @@
+.image {
+  display: block;
+  object-fit: cover;
+}
+
+.image--background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.image--card {
+  width: 100%;
+  height: 360px;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  transition: color var(--transition-duration);
+
+  &:hover {
+    color: var(--primary-color);
+  }
+}
+
+.interactive {
+  margin: 0;
+  font-size: calc(var(--size) * 3.5);
+  font-weight: 600;
+}

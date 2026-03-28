@@ -1,0 +1,22 @@
+.container {
+  max-width: var(--max-width);
+  padding-inline: calc(var(--size) * 4);
+  margin-inline: auto;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.flexbox--center {
+  place-items: center;
+  place-content: center;
+}
+
+.flexbox--responsive {
+  flex-direction: column;
+
+  @media (width >=768px) {
+    flex-direction: row;
+  }
+}

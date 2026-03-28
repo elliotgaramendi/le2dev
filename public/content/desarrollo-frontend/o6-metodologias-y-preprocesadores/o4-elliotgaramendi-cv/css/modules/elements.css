@@ -1,0 +1,83 @@
+.image {
+  display: block;
+  object-fit: cover;
+}
+
+.image--avatar {
+  width: calc(var(--size) * 32);
+  height: calc(var(--size) * 32);
+  border-radius: calc(var(--size) * 4);
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  transition: filter 0.3s;
+
+  &:hover {
+    filter: brightness(1.25);
+  }
+}
+
+.title {
+  margin: 0;
+  font-size: calc(var(--size) * 8);
+  font-weight: 800;
+}
+
+.title--xs {
+  font-size: calc(var(--size) * 6);
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: calc(var(--size) * 6);
+  font-weight: 700;
+}
+
+.subtitle--xs {
+  font-size: calc(var(--size) * 5);
+  font-weight: 600;
+}
+
+.subtitle--2xs {
+  font-size: calc(var(--size) * 4.5);
+  font-weight: 600;
+}
+
+.subtitle--3xs {
+  font-size: calc(var(--size) * 4);
+  font-weight: 600;
+}
+
+.subtitle--4xs {
+  font-size: calc(var(--size) * 3.5);
+  font-weight: 500;
+}
+
+.text {
+  margin: 0;
+  font-size: calc(var(--size) * 4);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.text--sm {
+  font-size: calc(var(--size) * 3.5);
+}
+
+.text--xs {
+  font-size: calc(var(--size) * 3);
+  font-weight: 300;
+}
+
+.interactive {
+  margin: 0;
+  font-size: calc(var(--size) * 3.5);
+  font-weight: 600;
+}
+
+.interactive--lg {
+  font-size: calc(var(--size) * 4);
+}

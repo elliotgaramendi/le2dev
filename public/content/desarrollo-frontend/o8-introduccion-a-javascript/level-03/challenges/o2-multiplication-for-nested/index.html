@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔁 Tabla de Multiplicar - For Anidado 🧮</title>
+</head>
+
+<body>
+  <h1>🔁 Tabla de Multiplicar - For Anidado 🧮</h1>
+  <h5>✖️ Genera tablas con bucles dentro de bucles 🔥</h5>
+  <script>
+    const table = 8;
+    let upTo = 3;
+    let totalSum = 0;
+
+    for (let i = 1; i <= upTo; i++) {
+      let result = table * i;
+      console.log(`${table} x ${i} = ${result}`);
+      totalSum += result;
+    }
+
+    console.log(`Total suma: ${totalSum}`);
+  </script>
+</body>
+
+</html>

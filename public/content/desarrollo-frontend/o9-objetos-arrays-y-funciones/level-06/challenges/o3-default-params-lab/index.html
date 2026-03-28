@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎁 Laboratorio de Parámetros - Default Parameters</title>
+</head>
+
+<body>
+  <h1>🎁 Laboratorio de Parámetros - Default Parameters</h1>
+  <h5>Default Parameters | Abre la consola para ver resultados</h5>
+
+  <script>
+    const createPotion = (name, power = 50) => {
+      let obj = {
+        name: name,
+        power: power
+      };
+      console.log(obj);
+      return obj;
+    };
+
+    const createHero = (name, level = 1, active = true) => {
+      return {
+        name,
+        level,
+        active
+      };
+    };
+
+    console.log(createPotion('Fuego').power === 50);
+    console.log(createPotion('Hielo', 80).power === 80);
+    console.log(createHero('Doky').level === 1);
+    console.log(createHero('Doky', 10).active === true);
+    console.log(typeof createPotion === 'function');
+  </script>
+</body>
+
+</html>

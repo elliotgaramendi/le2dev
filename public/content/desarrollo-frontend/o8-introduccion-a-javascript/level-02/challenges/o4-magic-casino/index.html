@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎲 Casino Mágico de Operadores ✨</title>
+</head>
+
+<body>
+  <h1>🎲 Casino Mágico de Operadores ✨</h1>
+  <h5>🎰 Apuesta tus números y gana con operadores mágicos 💎</h5>
+  <script>
+    const feNumber = 8;
+    const amorosaNumber = 7;
+    let victories = 0;
+    // Calculate: feNumber % 2 (is it even?)
+    const feRemainder = feNumber % 2;
+    // Calculate: amorosaNumber % 2 (is it even?)
+    const amorosaRemainder = amorosaNumber % 2;
+    // Calculate: feNumber ** 2
+    const squaredFe = feNumber ** 2;
+    // Calculate: amorosaNumber ** 2
+    const squaredAmorosa = amorosaNumber ** 2;
+    // Increment victories with ++
+    victories++;
+    // Show all calculations with console.log()
+    console.log(feRemainder === 0 ? '¡FE es par!' : '¡FE es impar!');
+    console.log(amorosaRemainder === 0 ? '¡Amorosa es par!' : '¡Amorosa es impar!');
+    console.log(`🎲 FE ${feNumber} ** 2 = ${squaredFe}`);
+    console.log(`🎲 Amorosa ${amorosaNumber} ** 2 = ${squaredAmorosa}`);
+    console.log(`🎲 FE ganó ${victories} ronda${victories > 1 ? 's' : ''}`);
+  </script>
+</body>
+
+</html>

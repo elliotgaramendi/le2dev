@@ -1,0 +1,16 @@
+:root {
+  --white-color: #fefefe;
+  --black-color: #010508;
+  --ash500-color: #808080;
+  --ash600-color: #696969;
+  --ash700-color: #555555;
+  --ash800-color: #404040;
+  --ash900-color: #2c2c2c;
+  --cash950-olor: #1e1e1e;
+  --primary-font: "Noto Sans", sans-serif;
+  --size: 0.21875rem;
+
+  @media (width >=426px) {
+    --size: 0.25rem;
+  }
+}

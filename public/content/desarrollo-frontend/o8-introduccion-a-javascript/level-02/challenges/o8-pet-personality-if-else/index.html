@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🐾 Test de Personalidad de Mascotas - If/Else 🔮</title>
+</head>
+
+<body>
+  <h1>🐾 Test de Personalidad de Mascotas - If/Else 🔮</h1>
+  <h5>🐕🐱 ¿Qué mascota mágica? ¡Descúbrelo! ✨</h5>
+
+  <script>
+    alert('🔮 Test de Personalidad de Mascotas para Mijael 👦');
+    const food = prompt('¿Comida favorita? (pizza/sushi/galletas)').toLocaleLowerCase();
+    const activity = prompt('¿Actividad favorita? (correr/leer/dormir)').toLocaleLowerCase();
+    const place = prompt('¿Lugar favorito? (parque/casa/cama)').toLocaleLowerCase();
+    let pet = null;
+
+    if (food === 'pizza' && activity === 'correr') {
+      pet = 'Perro 🐕';
+    } else if (food === 'sushi' && activity === 'leer') {
+      pet = 'Gato 🐱';
+    } else if (activity === 'dormir') {
+      pet = 'Hamster 🐹';
+    } else {
+      pet = 'Dragón 🐲';
+    }
+
+    alert(`¡Tu mascota ideal es: ${pet}! 🎉`);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔍 Busca en Cuadrícula - While Anidado 🧮</title>
+</head>
+
+<body>
+  <h1>🔍 Busca en Cuadrícula - While Anidado 🧮</h1>
+  <h5>🔄 Aprende a buscar en una cuadrícula con bucles anidados (abrir consola) 🎯</h5>
+  <script>
+    const gridSize = 2;
+    const targetRow = 1;
+    const targetCol = 0;
+    let row = 0;
+    let found = false;
+    let checked = 0;
+
+    while (row < gridSize) {
+      let col = 0;
+
+      while (col < gridSize) {
+        checked++;
+
+        if (row === targetRow && col === targetCol) {
+          found = true;
+          console.log(`💎 Cristal encontrado en fila ${row}, columna ${col}`);
+          break;
+        }
+
+        col++;
+      }
+
+      if (found) {
+        break;
+      }
+      row++;
+    }
+
+    if (!found) {
+      console.log('💎 Cristal no encontrado');
+    }
+
+    console.log(`🔍 Comprobados: ${checked}`);
+  </script>
+</body>
+
+</html>

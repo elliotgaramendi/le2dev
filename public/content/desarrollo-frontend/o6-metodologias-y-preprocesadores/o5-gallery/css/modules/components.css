@@ -1,0 +1,31 @@
+.header {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  width: 100%;
+  background-color: #01050880;
+}
+
+.nav {
+  padding-block: 1rem;
+}
+
+.hero {
+  position: relative;
+  min-height: 100dvh;
+}
+
+.section {
+  padding-block: 2rem;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.card {
+  border-radius: 1rem;
+  overflow: hidden;
+}

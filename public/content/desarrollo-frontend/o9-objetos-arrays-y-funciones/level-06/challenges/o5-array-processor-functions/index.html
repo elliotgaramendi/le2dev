@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔄 Procesador de Arrays - Funciones con Arrays</title>
+</head>
+
+<body>
+  <h1>🔄 Procesador de Arrays - Funciones con Arrays</h1>
+  <h5>Funciones con Arrays | Abre la consola para ver resultados</h5>
+
+  <script>
+    const filterEven = (numbers) => {
+      const evenNumbers = numbers.filter((number) => {
+        return number % 2 === 0;
+      });
+
+      return evenNumbers;
+    };
+
+    const doubleValues = (numbers) => {
+      return numbers.map(number => {
+        return number * 2;
+      });
+    };
+
+    const getNames = (heroes) => {
+      return heroes.map(hero => hero.name);
+    };
+
+    const numbers = [1, 2, 3, 4, 5, 6];
+    const values = [5, 10, 15];
+    const heroes = [{ name: 'Fe' }, { name: 'Doky' }];
+
+    console.log(getNames(heroes));
+
+    console.log(filterEven(numbers).length === 3);
+    console.log(doubleValues(values).length === 3);
+    console.log(doubleValues(values)[0] === 10);
+    console.log(getNames(heroes)[1] === 'Doky');
+    console.log(typeof filterEven === 'function');
+  </script>
+</body>
+
+</html>

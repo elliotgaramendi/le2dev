@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎨 Paleta de Colores</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <main class="app">
+    <header class="app__header">
+      <h1 class="app__title">🎨 Paleta de Colores</h1>
+      <p class="app__subtitle">JSON + LocalStorage | Abre la consola para ver resultados</p>
+    </header>
+
+    <section class="palette">
+      <article id="colorPrimary" class="palette__color">
+        <div class="palette__box"></div>
+        <p class="palette__label">Primary</p>
+      </article>
+
+      <article id="colorSecondary" class="palette__color">
+        <div class="palette__box"></div>
+        <p class="palette__label">Secondary</p>
+      </article>
+
+      <article id="colorAccent" class="palette__color">
+        <div class="palette__box"></div>
+        <p class="palette__label">Accent</p>
+      </article>
+    </section>
+
+    <button id="saveBtn" class="btn">💾 Guardar Paleta</button>
+  </main>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

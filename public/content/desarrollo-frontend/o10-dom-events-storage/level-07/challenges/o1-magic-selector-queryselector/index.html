@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>🔍 Selector Mágico</title>
+</head>
+
+<body>
+  <h1 id="title">Título Original</h1>
+  <p class="description">Descripción original</p>
+  <button id="btn">Botón Original</button>
+
+  <script>
+    const documentTitle = document.getElementById('title');
+    console.log(documentTitle);
+    console.log(documentTitle.textContent);
+
+    const titleObject = {
+      textContent: 'Título Original'
+    }
+    console.log(titleObject);
+
+    titleObject.textContent = 'Chanchito feliz';
+    console.log(titleObject);
+
+    const title = document.getElementById('title');
+    title.textContent = 'Bienvenido al DOM';
+
+    const description = document.querySelector('.description');
+    description.textContent = 'JavaScript controla la página';
+
+    const btn = document.getElementById('btn');
+    btn.textContent = 'Click Mágico';
+
+    console.log(title.textContent === 'Bienvenido al DOM');
+    console.log(description.textContent === 'JavaScript controla la página');
+    console.log(btn.textContent === 'Click Mágico');
+    console.log(title.tagName === 'H1');
+    console.log(typeof title === 'object');
+  </script>
+</body>
+
+</html>

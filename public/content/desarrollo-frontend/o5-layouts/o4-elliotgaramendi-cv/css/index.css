@@ -1,0 +1,148 @@
+.body {
+  margin: 0;
+  background-color: #fefefe;
+  color: #010508;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.header {
+  padding-block: 2rem;
+}
+
+.section {
+  padding-block: 1rem;
+}
+
+.container {
+  max-width: 768px;
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+.image {
+  display: block;
+  object-fit: cover;
+}
+
+.image--avatar {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 1rem;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  transition: filter 0.3s;
+
+  &:hover {
+    filter: brightness(1.25);
+  }
+}
+
+.title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.title--xs {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.subtitle--xs {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.subtitle--2xs {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.subtitle--3xs {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.text {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.text--sm {
+  font-size: 0.875rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.f-direction-column {
+  flex-direction: column;
+}
+
+.a-items-center {
+  align-items: center;
+}
+
+.j-content-between {
+  justify-content: space-between;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.c-ash500 {
+  color: #808080;
+}
+
+.c-ash600 {
+  color: #696969;
+}
+
+.c-ash700 {
+  color: #555555;
+}
+
+.c-ash800 {
+  color: #404040;
+}
+
+.c-ash900 {
+  color: #2c2c2c;
+}
+
+.c-ash950 {
+  color: #1e1e1e;
+}
+
+.t-align-center {
+  text-align: center;
+}
+
+.f-weight-500 {
+  font-weight: 500;
+}
+
+.f-weight-400 {
+  font-weight: 400;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📦 Acumulador Infinito - Rest Parameters</title>
+</head>
+
+<body>
+  <h1>📦 Acumulador Infinito - Rest Parameters</h1>
+  <h5>Rest Parameters | Abre la consola para ver resultados</h5>
+
+  <script>
+    const sumAll = (...nums) => {
+      let total = 0;
+
+      nums.forEach((element) => {
+        total += element;
+      });
+
+      return total;
+    };
+
+    const multiplyAll = (...nums) => {
+      let total = 1;
+
+      nums.forEach((element) => {
+        total *= element;
+      });
+
+      return total;
+    };
+
+    const getMax = (...nums) => {
+      return Math.max(...nums);
+    };
+
+    console.log(sumAll(1, 2, 3) === 6);
+    console.log(sumAll(5, 10, 15, 20) === 50);
+    console.log(multiplyAll(2, 3, 4) === 24);
+    console.log(getMax(10, 5, 20, 15) === 20);
+    console.log(typeof sumAll === 'function');
+  </script>
+</body>
+
+</html>

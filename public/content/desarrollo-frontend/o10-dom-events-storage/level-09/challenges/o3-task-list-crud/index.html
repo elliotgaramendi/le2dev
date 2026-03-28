@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📋 Lista de Tareas</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <main class="app">
+    <header class="app__header">
+      <h1 class="app__title">📋 Lista de Tareas</h1>
+      <p class="app__subtitle">CRUD + LocalStorage | Abre la consola para ver resultados</p>
+    </header>
+
+    <form id="taskForm" class="form">
+      <input type="text" id="taskInput" name="task" class="form__input" placeholder="Nueva tarea... ✨" required>
+      <button type="submit" class="form__btn">➕ Agregar</button>
+    </form>
+
+    <ul id="taskList" class="tasks"></ul>
+  </main>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

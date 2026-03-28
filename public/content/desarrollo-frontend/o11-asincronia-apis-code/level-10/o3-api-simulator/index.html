@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌐 Simulador de API</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <main class="app">
+    <header class="app__header">
+      <h1 class="app__title">🌐 Simulador de API</h1>
+      <p class="app__subtitle">Async/Await | Abre la consola para ver resultados</p>
+    </header>
+
+    <section class="content">
+      <button id="loadBtn" class="btn">📡 Cargar Usuarios</button>
+      <div id="loading" class="loading" style="display: none;">
+        <div class="loading__spinner"></div>
+        <p class="loading__text">Cargando datos...</p>
+      </div>
+      <ul id="userList" class="users"></ul>
+    </section>
+  </main>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

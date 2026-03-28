@@ -1,0 +1,112 @@
+/* Globals */
+:root {
+  color-scheme: dark;
+}
+
+.body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Layout */
+.container {
+  max-width: 1280px;
+  padding-inline: 1rem;
+  margin-inline: auto;
+}
+
+/* Components */
+.header {
+  box-shadow: 0 0 0.125rem 0.0625rem #fefefe80;
+}
+
+.nav {
+  padding-block: 1rem;
+}
+
+.hero {
+  padding-block: 2rem;
+}
+
+.hero__title {
+  margin: 0;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+}
+
+.hero__subtitle {
+  margin: 0;
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+}
+
+.hero__paragraph {
+  margin: 0;
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Elements */
+
+.link {
+  color: #fefefe;
+  text-decoration: none;
+}
+
+.button {
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  background-color: #23b5e8;
+  color: black;
+  text-decoration: none;
+}
+
+/* Utils */
+.d-flex {
+  display: flex;
+}
+
+.f-direction-column {
+  flex-direction: column;
+}
+
+.a-items-center {
+  align-items: center;
+}
+
+.j-content-start {
+  justify-content: start;
+}
+
+.j-content-center {
+  justify-content: center;
+}
+
+.j-content-end {
+  justify-content: end;
+}
+
+.f-1 {
+  flex: 1;
+}
+
+.g-2 {
+  gap: 0.5rem
+}
+
+.g-3 {
+  gap: 0.75rem
+}
+
+.g-4 {
+  gap: 1rem
+}
+
+@media (width >=768px) {
+  .md\:f-direction-row {
+    flex-direction: row;
+  }
+}

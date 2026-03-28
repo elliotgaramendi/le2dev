@@ -1,0 +1,9 @@
+:root {
+  color-scheme: var(--color-scheme);
+  scroll-behavior: smooth;
+}
+
+.body {
+  margin: 0;
+  font-family: var(--primary-font);
+}

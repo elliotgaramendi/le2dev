@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎚️ Selector de Misión - Switch Statement ⚔️</title>
+</head>
+
+<body>
+  <h1>🎚️ Selector de Misión - Switch Statement ⚔️</h1>
+  <h5>🗓️ Cada día una nueva aventura para Chocolate el perro 🐕</h5>
+  <script>
+    let day = -1;
+    let mission = '';
+
+    day = +prompt('Ingrese el día (1-7) para Chocolate');
+
+    switch (day) {
+      case 1:
+        mission = 'Lunes: Entrenar con espadas ⚔️';
+        break;
+      case 2:
+        mission = 'Martes: Proteger el reino 🛡️';
+        break;
+      case 3:
+        mission = 'Miércoles: Explorar mazmorras 🗝️';
+        break;
+      case 4:
+        mission = 'Jueves: Cazar dragones 🐲';
+        break;
+      case 5:
+        mission = 'Viernes: Descanso en la taberna 🍺';
+        break;
+      case 6:
+        mission = 'Sábado: Paseo por el bosque 🌲';
+        break;
+      case 7:
+        mission = 'Domingo: Fiesta en el castillo 🎉';
+        break;
+      default:
+        mission = '❌ Día no válido';
+        break;
+    }
+
+    alert(mission);
+  </script>
+</body>
+
+</html>

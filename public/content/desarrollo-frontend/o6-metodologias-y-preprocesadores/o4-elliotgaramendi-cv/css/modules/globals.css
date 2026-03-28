@@ -1,0 +1,6 @@
+.body {
+  margin: 0;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  font-family: var(--primary-font);
+}

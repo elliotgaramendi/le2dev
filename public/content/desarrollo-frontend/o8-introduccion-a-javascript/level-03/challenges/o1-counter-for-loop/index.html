@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔢 Contador de Números - For Loop ✨</title>
+</head>
+
+<body>
+  <h1>🔢 Contador de Números - For Loop ✨</h1>
+  <h5>🔄 Aprende a contar automáticamente con bucles for 🎯</h5>
+
+  <script>
+    let start = 1;
+    let end = 10;
+    let sum = 0;
+    let evens = 0;
+    let odds = 0;
+
+    for (let index = start; index <= end; index++) {
+      sum += index;
+      if (index % 2 === 0) {
+        evens++;
+      } else {
+        odds++;
+      }
+    }
+
+    console.log('Suma total:', sum);
+    console.log('Pares:', evens);
+    console.log('Impares:', odds);
+  </script>
+</body>
+
+</html>

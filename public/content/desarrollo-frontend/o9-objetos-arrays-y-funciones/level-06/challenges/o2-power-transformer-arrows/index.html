@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🏹 Transformador de Poder I Arrow Functions</title>
+</head>
+
+<body>
+  <h1>🏹 Transformador de Poder I Arrow Functions</h1>
+  <h5>Arrow Functions | Abre la consola para ver resultados</h5>
+  <script>
+    // Arrow functions `() => {}` `const nombre = (param) => expresion`
+
+    const double = (number) => {
+      return number * 2;
+    };
+
+    const square = number => {
+      return number ** 2;
+    };
+
+    // const greet = (name) => {
+    //   return 'Hola ' + name;
+    // };
+    const greet = name => 'Hola ' + name;
+
+    const isAdult = age => age >= 18;
+
+    console.log(double(7) === 14);
+    console.log(square(5) === 25);
+    console.log(greet('Elliot') === 'Hola Elliot');
+    console.log(isAdult(20) === true);
+    console.log(typeof double === 'function');
+  </script>
+</body>
+
+</html>

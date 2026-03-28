@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌟 Copiar, Combinar y Expandir I Spread operator 🚀</title>
+</head>
+
+<body>
+  <h1>🌟 Copiar, Combinar y Expandir I Spread operator 🚀</h1>
+  <h5>Spread Operator | Abre la consola para ver resultados</h5>
+
+  <script>
+    const mijaelClan = ['espada', 'escudo'];
+    const chocolateClan = ['arco', 'flecha'];
+
+    const backupMijaelClan = [...mijaelClan];
+    const backupChocolateClan = [...chocolateClan];
+
+    const unitedClan = [...mijaelClan, ...chocolateClan];
+
+    const clanWithAxe = ['hacha', ...unitedClan];
+
+    console.log(backupMijaelClan.length === 2 && backupChocolateClan.length === 2);
+    console.log(unitedClan.length === 4);
+    console.log(clanWithAxe[0] === 'hacha');
+    console.log(mijaelClan.length === 2);
+    console.log(Array.isArray(unitedClan) === true);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔄 Copiar y Combinar I Spread and Destructuring</title>
+</head>
+
+<body>
+  <h1>🔄 Copiar y Combinar I Spread and Destructuring</h1>
+  <h5>Spread and Destructuring | Abre la consola para ver resultados</h5>
+  <script>
+    const recipe1 = { name: 'Pizza', time: 30 };
+    const recipe2 = { temp: 200, servings: 4 };
+
+    console.log(recipe1);
+    console.log({ ...recipe1 });
+    console.log({ ...recipe1, price: 10 });
+
+    const fullRecipe = {
+      ...recipe1,
+      ...recipe2
+    };
+    console.log(fullRecipe);
+
+    const recipeCopy = { ...recipe1 };
+
+    const { age } = { name: 'Doky', age: 14 };
+    console.log(age);
+
+    const { name: recipeName } = recipeCopy;
+
+    console.log('--- Test cases  ---');
+    console.log(fullRecipe.name === 'Pizza');
+    console.log(fullRecipe.temp === 200);
+    console.log(Object.keys(fullRecipe).length === 4);
+    console.log(recipeName === 'Pizza');
+    console.log(recipe1.name === 'Pizza');
+  </script>
+</body>
+
+</html>

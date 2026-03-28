@@ -1,0 +1,6 @@
+.body {
+  margin: 0;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

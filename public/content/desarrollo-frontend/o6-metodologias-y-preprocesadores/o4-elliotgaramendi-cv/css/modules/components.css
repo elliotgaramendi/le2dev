@@ -1,0 +1,7 @@
+.header {
+  padding-block: calc(var(--size) * 8);
+}
+
+.section {
+  padding-block: calc(var(--size) * 4);
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎒 La Mochila Mágica - Crear y Manipular Arrays 📦</title>
+</head>
+
+<body>
+  <h1>🎒 La Mochila Mágica - Crear y Manipular Arrays 📦</h1>
+  <p>¡Bienvenido a la Mochila Mágica! 🎒📦</p>
+  <h5>Ver los casos de prueba en la consola.</h5>
+
+  <script>
+    const colors = ['rojo', 'azul', 'verde'];
+
+    console.log(colors);
+
+    console.log(colors.length);
+    console.log(colors[0]);
+    console.log(colors[colors.length - 1]);
+
+    colors[1] = 'dorado';
+    console.log(colors.length === 3);
+    console.log(colors[0] === 'rojo');
+    console.log(colors[colors.length - 1] === 'verde');
+    console.log(colors[1] === 'dorado');
+
+    colors.push('morado');
+    console.log(colors);
+    colors.pop();
+    console.log(colors);
+    colors.pop();
+    console.log(colors);
+
+    console.log(colors.length === 2);
+    console.log(colors[0] === 'rojo');
+    console.log(colors[colors.length - 1] === 'dorado');
+  </script>
+</body>
+
+</html>

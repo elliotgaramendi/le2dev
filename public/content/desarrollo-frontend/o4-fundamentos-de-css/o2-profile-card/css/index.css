@@ -1,0 +1,80 @@
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  background-image: url('https://i.postimg.cc/Gp3ysBfq/react-system.webp');
+  background-size: cover;
+  background-position: center;
+  color: #fefefe;
+  font-family: monospace;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 320px;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.125rem 0.25rem 0 #fefefe80;
+  background-color: #01050880;
+  backdrop-filter: blur(8px);
+  text-align: center;
+}
+
+.image {
+  border-radius: 50%;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.subtitle {
+  margin: 0;
+  color: #bbb;
+  font-size: 1rem;
+}
+
+.text {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #23B5E8;
+  color: #010508;
+  font-size: 0.75rem;
+  font-weight: bold;
+  transition: box-shadow 0.3s, filter 0.3s;
+
+  &:hover {
+    box-shadow: 0 0.0625rem 0.125rem 0 #23B5E8;
+    filter: brightness(1.25);
+  }
+}
+
+.link {
+  color: #fefefe;
+  font-weight: bold;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #23B5E8;
+  }
+}

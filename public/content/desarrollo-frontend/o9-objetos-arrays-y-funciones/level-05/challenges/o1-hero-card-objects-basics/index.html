@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>👤 Ficha de Héroe I Objetos Básicos</title>
+</head>
+
+<body>
+  <h1>👤 Ficha de Héroe I Objetos Básicos</h1>
+  <h5>Objects Básicos | Abre la consola para ver resultados</h5>
+
+  <script>
+    const hero = {
+      name: 'Elliot',
+      power: 'rayo',
+      level: 92
+    };
+
+    console.log(hero);
+    console.log(hero.name);
+    console.log(hero['name']);
+
+    console.log(hero.level);
+    hero.level = 95;
+    console.log(hero.level);
+
+    console.log(hero.active);
+    hero.active = true;
+    console.log(hero.active);
+
+    console.log(typeof hero);
+
+    console.log('--- Test cases  ---');
+    console.log(hero.name === 'Elliot');
+    console.log(hero.power === 'rayo');
+    console.log(hero.level === 95);
+    console.log(hero.active === true);
+    console.log(typeof hero === 'object');
+  </script>
+</body>
+
+</html>

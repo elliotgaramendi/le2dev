@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎲 Juego de Reacción</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <main class="app">
+    <header class="app__header">
+      <h1 class="app__title">🎲 Juego de Reacción</h1>
+      <p class="app__subtitle">Promises | Abre la consola para ver resultados</p>
+    </header>
+
+    <section class="game">
+      <p id="instructions" class="game__text">Haz click en "Iniciar" y espera...</p>
+      <button id="startBtn" class="btn btn--start">🚀 Iniciar Juego</button>
+      <button id="clickBtn" class="btn btn--target" style="display: none;">¡CLICK AQUÍ! ⚡</button>
+      <div id="result" class="game__result"></div>
+    </section>
+  </main>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

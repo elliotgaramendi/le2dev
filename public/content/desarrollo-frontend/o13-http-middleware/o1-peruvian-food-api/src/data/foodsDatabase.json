@@ -1,0 +1,76 @@
+[
+  {
+    "id": 1,
+    "name": "Ceviche",
+    "category": "main",
+    "description": "Fresh raw fish cured in citrus juices with onions and chili peppers",
+    "ingredients": [
+      "fish",
+      "lime juice",
+      "red onions",
+      "chili peppers",
+      "sweet potato"
+    ],
+    "isSpicy": true,
+    "price": 25,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/Cebiche_de_corvina.JPG",
+    "createdAt": "2025-09-04T02:06:31.770Z",
+    "updatedAt": "2025-09-04T02:06:31.776Z"
+  },
+  {
+    "id": 2,
+    "name": "Lomo Saltado",
+    "category": "main",
+    "description": "Stir-fried beef with vegetables and french fries served with rice",
+    "ingredients": [
+      "beef",
+      "tomatoes",
+      "onions",
+      "soy sauce",
+      "potatoes",
+      "rice"
+    ],
+    "isSpicy": false,
+    "price": 22,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Lomo-saltado-perudelights.jpg",
+    "createdAt": "2025-09-04T02:06:31.776Z",
+    "updatedAt": "2025-09-04T02:06:31.776Z"
+  },
+  {
+    "id": 3,
+    "name": "Ají de Gallina",
+    "category": "main",
+    "description": "Creamy chicken stew with yellow chili pepper sauce",
+    "ingredients": [
+      "chicken",
+      "yellow chili pepper",
+      "bread",
+      "milk",
+      "cheese",
+      "walnuts"
+    ],
+    "isSpicy": true,
+    "price": 20,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Aj%C3%AD_de_gallina.jpg/800px-Aj%C3%AD_de_gallina.jpg",
+    "createdAt": "2025-09-04T02:06:31.776Z",
+    "updatedAt": "2025-09-04T02:06:31.776Z"
+  },
+  {
+    "id": 4,
+    "name": "Causa Limeña",
+    "category": "appetizer",
+    "description": "Layered potato dish with chicken or tuna salad filling",
+    "ingredients": [
+      "potatoes",
+      "lime juice",
+      "aji amarillo",
+      "chicken",
+      "mayonnaise"
+    ],
+    "isSpicy": true,
+    "price": 14,
+    "imageUrl": "https://example.com/causa-limena.jpg",
+    "createdAt": "2025-09-04T03:33:15.160Z",
+    "updatedAt": "2025-09-04T03:33:15.160Z"
+  }
+]

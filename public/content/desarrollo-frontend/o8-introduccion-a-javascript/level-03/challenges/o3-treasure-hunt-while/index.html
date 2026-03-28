@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌀 Busca el Tesoro - While Loop 🏴‍☠️</title>
+</head>
+
+<body>
+  <h1>🌀 Busca el Tesoro - While Loop 🏴‍☠️</h1>
+  <h5>💰 Busca dinámicamente hasta encontrar el objetivo ⚡</h5>
+
+  <script>
+    const treasure = 23;
+    let limit = 20;
+    let found = false;
+    let attempts = 0;
+    let current = 1;
+    let message = '';
+
+    while (!found && current <= limit) {
+      attempts++;
+
+      if (current === treasure) {
+        found = true;
+        message = '¡Tesoro encontrado!';
+      }
+      current++;
+    }
+
+    if (!found) {
+      message = 'Tesoro no encontrado';
+    }
+
+    console.log(`Intentos: ${attempts}`);
+    console.log(`Resultado: ${message}`);
+  </script>
+</body>
+
+</html>

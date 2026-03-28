@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🤖 Portal Rick and Morty</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <main class="app">
+    <header class="app__header">
+      <h1 class="app__title">🤖 Portal Rick and Morty</h1>
+      <p class="app__subtitle">Fetch API - Query Params 🔍 | Tests en el DOM ✅</p>
+    </header>
+
+    <form id="searchForm" class="search">
+      <input type="text" id="searchInput" name="character" class="search__input" placeholder="Busca un personaje... 👽"
+        required>
+      <button type="submit" class="search__btn">🔍 Buscar</button>
+    </form>
+
+    <div id="loading" class="loading" style="display: none;">
+      <div class="loading__spinner"></div>
+      <p class="loading__text">Abriendo portal... 🌀</p>
+    </div>
+
+    <p id="error" class="error" style="display: none;"></p>
+
+    <section id="characterList" class="characters"></section>
+
+    <aside id="testResults" class="tests"></aside>
+  </main>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

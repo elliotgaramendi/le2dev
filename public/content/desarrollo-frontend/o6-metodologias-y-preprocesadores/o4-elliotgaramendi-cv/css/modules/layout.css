@@ -1,0 +1,13 @@
+.container {
+  max-width: 768px;
+  margin-inline: auto;
+  padding-inline: calc(var(--size) * 8);
+}
+
+.g-layout {
+  display: grid;
+}
+
+.g-layout--auto-fit-columns {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}

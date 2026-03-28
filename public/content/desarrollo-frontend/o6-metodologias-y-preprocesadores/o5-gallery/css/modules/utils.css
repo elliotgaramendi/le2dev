@@ -1,0 +1,29 @@
+.d-flex {
+  display: flex;
+}
+
+.f-direction-column {
+  flex-direction: column;
+}
+
+.a-items-center {
+  align-items: center;
+}
+
+.j-content-s-between {
+  justify-content: space-between;
+}
+
+.g-2 {
+  gap: calc(var(--size) * 2);
+}
+
+.g-4 {
+  gap: calc(var(--size) * 4);
+}
+
+@media (width >=768px) {
+  .md\:f-direction-row {
+    flex-direction: row;
+  }
+}

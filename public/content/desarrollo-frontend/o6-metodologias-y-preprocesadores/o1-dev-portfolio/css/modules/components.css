@@ -1,0 +1,37 @@
+.header {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 0 calc(var(--size) * 0.5) calc(var(--size) * 0.25) var(--shadow);
+  background-color: var(--light-shadow);
+  backdrop-filter: blur(var(--size));
+}
+
+.nav {
+  padding-block: calc(var(--size) * 4);
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  min-height: min(calc(var(--size) * 128), 50dvh);
+  padding-block: calc(var(--size) * 20);
+  overflow: hidden;
+
+  &>img {
+    mask-image: linear-gradient(var(--primary-background) 87.5%, transparent);
+  }
+}
+
+.hero__cover-decorators {
+  position: absolute;
+  inset: 0;
+  animation: spin 10s linear infinite;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

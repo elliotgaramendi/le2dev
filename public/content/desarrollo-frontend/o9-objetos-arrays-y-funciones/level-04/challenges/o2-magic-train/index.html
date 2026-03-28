@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🚂 El Tren Mágico - Shift, Unshift e Includes 🚄</title>
+</head>
+
+<body>
+  <h1>🚂 El Tren Mágico - Shift, Unshift e Includes 🚄</h1>
+  <h5>Ver los casos de prueba en la consola.</h5>
+
+  <script>
+    const train = ['Vagon 1', 'Vagón 2', 'Vagón 3'];
+    console.log(train);
+
+    train.unshift('Locomotora');
+    console.log(train)
+
+    train.shift();
+    console.log(train);
+
+    train.unshift('VIP');
+    console.log(train);
+
+    console.log(train.includes('VIP'))
+    // console.log(train.includes('Vagón 3'))
+
+    console.log(train.length === 4);
+    console.log(train[0] === 'VIP');
+    console.log(train.includes('VIP') === true);
+    console.log(train.includes('Fantasma') === false);
+    console.log(Array.isArray(train) === true);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🖱️ Botón Contador</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+
+    #counterDisplay {
+      font-size: 48px;
+      font-weight: bold;
+      margin: 20px;
+    }
+
+    #clickBtn {
+      padding: 20px 40px;
+      font-size: 24px;
+      cursor: pointer;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      transition: transform 0.2s;
+    }
+
+    #clickBtn:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>🖱️ Botón Contador</h1>
+  <h5>Click Event | Abre la consola para ver resultados</h5>
+  <div id="counterDisplay">Clicks: 0</div>
+  <button id="clickBtn">¡Haz Click! 🎯</button>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

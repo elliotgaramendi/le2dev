@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💾 Guardar y Recuperar I JSON</title>
+</head>
+
+<body>
+  <h1>💾 Guardar y Recuperar I JSON</h1>
+  <h5>JSON | Abre la consola para ver resultados</h5>
+  <script>
+    const hero = { name: 'Elliot', power: 'rayo', level: 92 };
+    console.log(hero);
+
+    const heroJSON = JSON.stringify(hero);
+    console.log(heroJSON);
+
+    const recoveredHero = JSON.parse(heroJSON);
+    console.log(recoveredHero);
+
+    console.log(typeof recoveredHero === 'object');
+    console.log(recoveredHero.name === 'Elliot');
+    console.log(recoveredHero.level === 92);
+    console.log(heroJSON.includes('Elliot') === true);
+    console.log(typeof heroJSON === 'string');
+  </script>
+</body>
+
+</html>

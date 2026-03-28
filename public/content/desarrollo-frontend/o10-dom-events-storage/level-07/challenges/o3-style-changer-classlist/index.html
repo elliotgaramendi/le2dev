@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>🎨 Cambio de Estilo</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background: blue;
+    }
+
+    .active {
+      border: 5px solid red;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box" class="box"></div>
+
+  <script>
+    const box = document.querySelector('#box');
+    console.log(box);
+    console.log(box.classList);
+    box.classList.add('active');
+    box.classList.remove('box');
+    box.classList.toggle('hidden');
+
+    console.log(box.classList.contains('active') === true);
+    console.log(box.classList.contains('box') === false);
+    console.log(box.classList.contains('hidden') === true);
+    console.log(box.classList.length === 2);
+    console.log(typeof box.classList === 'object');
+  </script>
+</body>
+
+</html>

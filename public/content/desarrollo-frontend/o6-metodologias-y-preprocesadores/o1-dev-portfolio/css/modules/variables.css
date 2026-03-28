@@ -1,0 +1,23 @@
+:root {
+  --color-scheme: dark;
+
+  --primary-color: #23b5e8;
+  --black-color: #010508;
+  --white-color: #fefefe;
+
+  --neutral-200: #bbb;
+  --shadow: #fefefe80;
+  --light-shadow: #01050880;
+
+  --size: 0.25rem;
+  --max-width: 1280px;
+  --transition-duration: 0.25s;
+
+  --primary-font: "Roboto", sans-serif;
+
+  --primary-background: var(--black-color);
+  --primary-text: var(--white-color);
+  --secondary-text: var(--neutral-200);
+  --light-primary-text: var(--black-color);
+  --border-radius: calc(var(--size) * 2);
+}

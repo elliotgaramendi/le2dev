@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎁 Extracción Elegante I Destructuring 🚀</title>
+</head>
+
+<body>
+  <h1>🎁 Extracción Elegante I Destructuring 🚀</h1>
+  <h5>Destructuring | Abre la consola para ver resultados</h5>
+
+  <script>
+    const treasures = ['diamante', 'rubí', 'esmeralda', 'zafiro', 'perla'];
+
+    const [first, ...restJewels] = treasures;
+
+    let a = 5;
+    let b = 10;
+    [a, b] = [b, a];
+
+    console.log(first === 'diamante');
+    console.log(restJewels.length === 4);
+    console.log(a === 10 && b === 5);
+    console.log(typeof first === 'string');
+    console.log(Array.isArray(restJewels) === true);
+  </script>
+</body>
+
+</html>

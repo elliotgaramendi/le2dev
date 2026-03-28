@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔑 Acceso Dinámico I Bracket Notation</title>
+</head>
+
+<body>
+  <h1>🔑 Acceso Dinámico I Bracket Notation</h1>
+  <h5>Bracket Notation | Abre la consola para ver resultados</h5>
+
+  <script>
+    const chest = { oro: 100, plata: 50, bronce: 25 };
+
+    console.log(chest);
+    console.log(chest.plata);
+    console.log(chest['plata']);
+
+    const metal = 'plata';
+    console.log(chest[metal]);
+
+    console.log(chest['bronce']);
+    chest['bronce'] = 30;
+    console.log(chest['bronce']);
+
+    const newMetal = 'diamante';
+    chest[newMetal] = 200;
+
+    console.log('--- Test cases  ---');
+    console.log(chest['oro'] === 100);
+    console.log(chest[metal] === 50);
+    console.log(chest['bronce'] === 30);
+    console.log(chest['diamante'] === 200);
+    console.log(Object.keys(chest).length === 4);
+  </script>
+</body>
+
+</html>

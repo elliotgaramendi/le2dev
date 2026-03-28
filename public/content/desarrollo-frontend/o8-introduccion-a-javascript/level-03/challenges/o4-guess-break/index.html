@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🚪 Adivina el Número - Break 🎯</title>
+</head>
+
+<body>
+  <h1>🚪 Adivina el Número - Break 🎯</h1>
+  <h5>💰 Adivina el número secreto de Fe. Míralo en la consola ⚡</h5>
+
+  <script>
+    const secret = 42;
+    let guess = -1; // Change this (user's guess)
+    const maxAttempts = 10;
+    let attempts = 0;
+    let found = false;
+
+    for (let i = 1; i <= maxAttempts; i++) {
+      attempts++;
+      guess = +prompt('¿Cuál es el número?');
+
+      if (guess === secret) {
+        found = true;
+        alert('¡Adivino! ¡Felicidades!');
+        break;
+      }
+
+      alert(`Vuelve a intentar (${attempts}/${maxAttempts})`);
+    }
+  </script>
+</body>
+
+</html>

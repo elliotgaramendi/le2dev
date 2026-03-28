@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🐕 Galería de Perritos</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <main class="app">
+    <header class="app__header">
+      <h1 class="app__title">🐕 Galería de Perritos</h1>
+      <p class="app__subtitle">Fetch API - GET</p>
+    </header>
+
+    <section class="gallery">
+      <div id="imageContainer" class="gallery__container">
+        <div id="loading" class="loading" style="display: none;">
+          <div class="loading__spinner"></div>
+          <p class="loading__text">Cargando perrito...</p>
+        </div>
+        <img id="dogImage" class="gallery__image" alt="Perrito aleatorio">
+        <p id="error" class="gallery__error" style="display: none;"></p>
+      </div>
+      <button id="newDogBtn" class="btn">🎲 Nuevo Perrito</button>
+    </section>
+  </main>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

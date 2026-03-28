@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎓 Examen de Hogwarts - If/Else 🦁</title>
+</head>
+
+<body>
+  <h1>🎓 Examen de Hogwarts - If/Else 🦁</h1>
+  <h5>🔮 El Sombrero Seleccionador elegirá tu casa mágica ✨</h5>
+
+  <script>
+    alert("⚠️ ¡Bienvenido al Examen de Hogwarts! 🎓");
+    const brave = prompt('¿Eres valiente? (sí/no)').toLocaleLowerCase();
+    const clever = prompt('¿Eres astuto/a? (sí/no)').toLocaleLowerCase();
+    const loyal = prompt('¿Eres leal? (sí/no)').toLocaleLowerCase();
+    let house = null;
+
+    if (brave === 'sí' && clever === 'no') {
+      house = '¡Gryffindor! 🦁';
+    } else if (clever === 'sí' && loyal === 'no') {
+      house = '¡Slytherin! 🐍';
+    } else if (loyal === 'sí' && clever === 'sí') {
+      house = '¡Potencial Ravenclaw! 🦅';
+    } else {
+      house = '¡Potencial Hufflepuff! 🦡';
+    }
+
+    alert(`🎉 ¡${house}! Bienvenida a tu casa mágica ✨`);
+  </script>
+</body>
+
+</html>

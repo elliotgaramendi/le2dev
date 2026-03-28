@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔍 Búsqueda y Corte - IndexOf y Slice 🔎</title>
+</head>
+
+<body>
+  <h1>🔍 Búsqueda y Corte - IndexOf y Slice 🔎</h1>
+  <h5>Ver los casos de prueba en la consola.</h5>
+  <script>
+    const suspects = [10, 25, 30, 25, 45, 30, 60];
+
+    const position25 = suspects.indexOf(25);
+    const middleNumbers = suspects.slice(2, 5);
+    const lastThree = suspects.slice(-3);
+
+    console.log(position25);
+    console.log(middleNumbers);
+    console.log(lastThree);
+
+    console.log(position25 === 1);
+    console.log(middleNumbers.length === 3);
+    console.log(lastThree[0] === 45);
+    console.log(suspects.length === 7);
+    console.log(typeof position25 === 'number');
+  </script>
+</body>
+
+</html>

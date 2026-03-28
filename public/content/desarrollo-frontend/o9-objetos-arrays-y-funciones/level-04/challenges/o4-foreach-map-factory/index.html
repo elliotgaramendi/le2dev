@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔄 Iteración vs Transformación</title>
+</head>
+
+<body>
+  <h1>🔄 Iteración vs Transformación</h1>
+  <h5>ForEach y Map | Abre la consola para ver resultados</h5>
+
+  <script>
+    const flourKilos = [5, 10, 15, 20];
+
+    let totalKilos = 0;
+
+    flourKilos.forEach((element) => {
+      totalKilos += element;
+    });
+
+    const doubledKilos = flourKilos.map((element) => {
+      return element * 2;
+    });
+
+    console.log(flourKilos);
+    console.log(doubledKilos);
+
+    console.log(totalKilos === 50);
+    console.log(doubledKilos[0] === 10);
+    console.log(doubledKilos.length === 4);
+    console.log(flourKilos[0] === 5);
+    console.log(typeof totalKilos === 'number');
+  </script>
+</body>
+
+</html>

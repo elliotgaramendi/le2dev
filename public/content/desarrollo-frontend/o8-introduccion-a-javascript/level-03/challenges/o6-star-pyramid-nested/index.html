@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌟 Pirámide de Estrellas - For Anidado 🧮</title>
+</head>
+
+<body>
+  <h1>🌟 Pirámide de Estrellas - For Anidado 🧮</h1>
+  <h5>🔄 Aprende a crear una pirámide de estrellas con bucles anidados 🎯</h5>
+
+  <script>
+    let height = 8;
+    let totalStars = 0;
+
+    for (let i = 0; i < height; i++) {
+      let row = '';
+      for (let j = 0; j <= i; j++) {
+        row += '*';
+        totalStars++;
+      }
+      console.log(row);
+    }
+
+    console.log(`Total estrellas: ${totalStars}`);
+  </script>
+</body>
+
+</html>

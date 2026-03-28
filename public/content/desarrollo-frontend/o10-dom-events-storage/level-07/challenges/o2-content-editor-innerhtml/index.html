@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>✏️ Editor de Contenido</title>
+</head>
+
+<body>
+  <div id="container"></div>
+  <input type="text" id="nameInput" placeholder="Escribe tu nombre">
+
+  <script>
+    const container = document.getElementById('container');
+    const nameInput = document.querySelector('#nameInput');
+
+    console.log(container);
+    console.log(nameInput);
+
+    container.innerHTML = '<h2>Hola</h2><p>Mundo</p>';
+
+    nameInput.value = 'Elliot';
+
+    console.log(nameInput.value);
+
+    console.log(container.innerHTML.includes('<h2>') === true);
+    console.log(container.innerHTML.includes('Hola') === true);
+    console.log(nameInput.value === 'Elliot');
+    console.log(container.children.length === 2);
+    console.log(typeof nameInput.value === 'string');
+  </script>
+</body>
+
+</html>

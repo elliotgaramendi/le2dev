@@ -1,0 +1,63 @@
+.d-flex {
+  display: flex;
+}
+
+.f-direction-column {
+  flex-direction: column;
+}
+
+.a-items-center {
+  align-items: center;
+}
+
+.j-content-between {
+  justify-content: space-between;
+}
+
+.gap-1 {
+  gap: calc(var(--size) * 1);
+}
+
+.gap-2 {
+  gap: calc(var(--size) * 2);
+}
+
+.gap-4 {
+  gap: calc(var(--size) * 4);
+}
+
+.c-ash500 {
+  color: var(--ash500-color);
+}
+
+.c-ash600 {
+  color: var(--ash600-color);
+}
+
+.c-ash700 {
+  color: var(--ash700-color);
+}
+
+.c-ash800 {
+  color: var(--ash800-color);
+}
+
+.c-ash900 {
+  color: var(--ash900-color);
+}
+
+.c-ash950 {
+  color: var(--ash-950-color);
+}
+
+.t-align-center {
+  text-align: center;
+}
+
+.f-weight-500 {
+  font-weight: 500;
+}
+
+.f-weight-400 {
+  font-weight: 400;
+}

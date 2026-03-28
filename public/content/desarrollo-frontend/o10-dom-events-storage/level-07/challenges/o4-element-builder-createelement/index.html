@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>➕ Constructor de Elementos</title>
+  <style>
+    .new-element {
+      padding: 20px;
+      background: lightblue;
+      margin: 10px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Elementos Dinámicos</h1>
+
+  <script>
+    const newBox = document.createElement('div');
+
+    newBox.id = 'newBox';
+    newBox.textContent = 'Soy nuevo';
+    newBox.classList.add('new-element');
+
+    document.body.appendChild(newBox);
+
+    console.log(newBox.textContent === 'Soy nuevo');
+    console.log(newBox.classList.contains('new-element') === true);
+    console.log(newBox.id === 'newBox');
+    console.log(document.body.contains(newBox) === true);
+    console.log(typeof newBox === 'object');
+  </script>
+</body>
+
+</html>

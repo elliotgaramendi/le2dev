@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🏰 Reino Anidado I Nested Objects</title>
+</head>
+
+<body>
+  <h1>🏰 Reino Anidado I Nested Objects</h1>
+  <h5>Nested Objects | Abre la consola para ver resultados</h5>
+  <script>
+    const kingdom = {
+      name: 'Arendelle',
+      king: {
+        name: 'Fe',
+        age: 35
+      },
+      population: 5000
+    };
+
+    console.log(kingdom);
+    console.log(kingdom.king);
+    console.log(kingdom.king.name);
+    console.log(kingdom.king.age);
+    kingdom.king.age = 36;
+    console.log(kingdom.king.age);
+
+    kingdom.king.power = 'fuego';
+    console.log(kingdom.king);
+
+    console.log('--- Test cases  ---');
+    console.log(kingdom.name === 'Arendelle');
+    console.log(kingdom.king.name === 'Fe');
+    console.log(kingdom.king.age === 36);
+    console.log(kingdom.king.power === 'fuego');
+    console.log(kingdom.population === 5000);
+  </script>
+</body>
+
+</html>

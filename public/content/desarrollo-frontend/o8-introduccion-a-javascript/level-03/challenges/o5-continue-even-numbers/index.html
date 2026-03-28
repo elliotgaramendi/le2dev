@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>⏭️ Solo Números Pares - Continue para Saltar</title>
+</head>
+
+<body>
+  <h1>⏭️ Solo Números Pares - Continue para Saltar</h1>
+  <h5>🔄 Aprende a contar automáticamente con bucles for en la consola 🎯</h5>
+
+  <script>
+    let limit = 5;
+    let sum = 0;
+    let count = 0;
+
+    let index = 1;
+    while (index <= limit) {
+      if (index % 2 !== 0) {
+        index++;
+        continue;
+      }
+      sum += index;
+      count++;
+      index++;
+    }
+
+    console.log('Suma total:', sum);
+    console.log('Números pares:', count);
+  </script>
+</body>
+
+</html>

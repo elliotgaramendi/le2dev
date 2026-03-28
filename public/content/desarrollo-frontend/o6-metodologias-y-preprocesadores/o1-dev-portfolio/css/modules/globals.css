@@ -1,0 +1,8 @@
+:root {
+  color-scheme: var(--color-scheme);
+}
+
+.body {
+  margin: 0;
+  font-family: var(--primary-font);
+}
