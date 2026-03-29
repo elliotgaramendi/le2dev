@@ -4,6 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "content:manifest": "node scripts/generate-content-manifest.mjs",
+    "predev": "npm run content:manifest",
+    "prebuild": "npm run content:manifest",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
@@ -11,7 +14,8 @@
   },
   "dependencies": {
     "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^7.13.2"
   },
   "devDependencies": {
     "@babel/core": "^7.29.0",

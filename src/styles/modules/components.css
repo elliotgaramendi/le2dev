@@ -1,0 +1,222 @@
+.hero {
+  padding-top: calc(var(--space) * 14);
+}
+
+.skip-link {
+  position: fixed;
+  top: -3rem;
+  left: calc(var(--space) * 4);
+  z-index: 40;
+  padding: calc(var(--space) * 1.5) calc(var(--space) * 2);
+  border-radius: calc(var(--space) * 1.5);
+  background-color: var(--primary-color);
+  color: var(--black-color);
+  text-decoration: none;
+  transition: top var(--transition-duration);
+}
+
+.skip-link:focus-visible {
+  top: calc(var(--space) * 3);
+}
+
+.brand-link {
+  transition: transform var(--transition-duration);
+}
+
+.brand-link:hover {
+  transform: translateY(-1px);
+}
+
+.header__links {
+  margin-inline: auto;
+  padding-inline: calc(var(--space) * 2);
+}
+
+.header__link {
+  position: relative;
+  padding-bottom: calc(var(--space) * 0.5);
+  letter-spacing: 0.01em;
+}
+
+.header__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.15rem;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background-color: var(--primary-color);
+  transition: transform var(--transition-duration);
+}
+
+.header__link:hover::after,
+.header__link--active::after {
+  transform: scaleX(1);
+}
+
+.header__link--active {
+  color: var(--white-color);
+}
+
+.header__cta {
+  box-shadow: 0 10px 22px -18px var(--glow-color);
+}
+
+.card {
+  border-radius: var(--radius);
+  border: 1px solid var(--stroke-color);
+  text-decoration: none;
+  overflow: hidden;
+  box-shadow: 0 20px 30px -28px var(--shadow-color);
+}
+
+.card--overlay {
+  position: relative;
+  min-height: 15.5rem;
+  background-color: var(--surface-color);
+}
+
+.card--overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(to top, rgb(3 10 19 / 98%) 8%, rgb(3 10 19 / 72%) 42%, rgb(3 10 19 / 48%) 70%, rgb(3 10 19 / 30%) 100%);
+}
+
+.card--surface {
+  padding: calc(var(--space) * 4);
+  background:
+    linear-gradient(180deg, rgb(17 31 48 / 98%), rgb(12 21 32 / 98%));
+}
+
+.card--project {
+  min-height: 14rem;
+}
+
+.card--interactive {
+  transition: transform var(--transition-duration), border-color var(--transition-duration), box-shadow var(--transition-duration);
+}
+
+.card--interactive:hover {
+  transform: translateY(-4px);
+  border-color: rgb(33 182 249 / 60%);
+  box-shadow: 0 28px 36px -26px var(--glow-color);
+}
+
+.card__content {
+  position: relative;
+  z-index: 1;
+  min-height: 100%;
+  justify-content: flex-end;
+  padding: calc(var(--space) * 3);
+}
+
+.card--overlay .badge {
+  background-color: rgb(33 182 249 / 96%);
+}
+
+.card--overlay .title,
+.card--overlay .text {
+  text-shadow: 0 2px 6px rgb(0 0 0 / 55%);
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+}
+
+.image--background {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.badge {
+  padding: calc(var(--space) * 0.75) calc(var(--space) * 2);
+  border-radius: 999px;
+  background-color: rgb(33 182 249 / 92%);
+  color: var(--black-color);
+}
+
+.button {
+  border: 1px solid var(--stroke-color);
+  border-radius: calc(var(--space) * 2);
+  text-decoration: none;
+  cursor: pointer;
+  background-color: rgb(17 31 48 / 75%);
+  color: var(--white-color);
+  padding: calc(var(--space) * 2) calc(var(--space) * 3);
+  transition: filter var(--transition-duration), transform var(--transition-duration), box-shadow var(--transition-duration);
+}
+
+.button:hover {
+  filter: brightness(1.075);
+  transform: translateY(-1px);
+}
+
+.button--primary {
+  background-color: var(--primary-color);
+  color: var(--black-color);
+  padding: calc(var(--space) * 2) calc(var(--space) * 4);
+  box-shadow: 0 16px 24px -20px var(--glow-color);
+}
+
+.breadcrumbs__link {
+  transition: color var(--transition-duration);
+}
+
+.breadcrumbs__link:hover {
+  color: var(--white-color);
+}
+
+.breadcrumbs__separator {
+  opacity: 0.6;
+}
+
+.breadcrumbs__current {
+  font-weight: 700;
+}
+
+@supports (animation-timeline: view()) {
+  .card--overlay,
+  .card--surface {
+    animation: reveal-card linear both;
+    animation-timeline: view();
+    animation-range: entry 12% cover 32%;
+  }
+}
+
+@keyframes reveal-card {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (width <768px) {
+  .header__links {
+    margin-inline: 0;
+    gap: calc(var(--space) * 2);
+    padding-inline: 0;
+  }
+
+  .header__cta {
+    display: none;
+  }
+
+  .hero {
+    padding-top: calc(var(--space) * 10);
+  }
+}

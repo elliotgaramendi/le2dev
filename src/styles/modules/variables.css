@@ -1,0 +1,26 @@
+:root {
+  --primary-color: #21b6f9;
+  --primary-strong-color: #0f94cf;
+  --secondary-color: #1d5682;
+  --white-color: #f7fbff;
+  --black-color: #030a13;
+  --ash100-color: #d8e2ee;
+  --ash200-color: #b1becf;
+  --ash300-color: #8a9bb0;
+  --ash400-color: #63778f;
+  --ash500-color: #405067;
+  --surface-color: #0c1520;
+  --surface-alt-color: #111f30;
+  --stroke-color: rgb(216 226 238 / 18%);
+  --shadow-color: rgb(1 6 14 / 35%);
+  --glow-color: rgb(33 182 249 / 30%);
+
+  --size: 0.25rem;
+  --space: 0.25rem;
+  --container-max-width: 1160px;
+  --grid-min-column: 17rem;
+  --radius: 1rem;
+  --transition-duration: 300ms;
+
+  --primary-font: 'Noto Sans', sans-serif;
+}
