@@ -22,28 +22,33 @@
 
 .title {
   font-size: calc(var(--size) * 8);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.15;
+  letter-spacing: -0.015em;
 }
 
 .title--hero {
-  max-width: 16ch;
-  font-size: clamp(2rem, 6vw, 4rem);
-  letter-spacing: -0.03em;
+  max-width: 15ch;
+  font-size: clamp(2.2rem, 6.2vw, 4.4rem);
+  line-height: 1.04;
+  letter-spacing: -0.035em;
 }
 
 .title--lg {
-  font-size: clamp(1.7rem, 4vw, calc(var(--size) * 10));
+  font-size: clamp(1.85rem, 3.85vw, calc(var(--size) * 10.5));
+  line-height: 1.12;
 }
 
 .title--sm {
-  font-size: calc(var(--size) * 5);
+  font-size: calc(var(--size) * 5.2);
   font-weight: 700;
+  line-height: 1.2;
 }
 
 .title--xs {
-  font-size: calc(var(--size) * 5.6);
+  font-size: calc(var(--size) * 5.4);
   font-weight: 700;
+  line-height: 1.2;
 }
 
 .subtitle--sm {
@@ -57,12 +62,13 @@
 }
 
 .text {
-  font-size: calc(var(--size) * 4);
-  line-height: 1.45;
+  font-size: calc(var(--size) * 3.9);
+  line-height: 1.5;
 }
 
 .text--md {
-  font-size: calc(var(--size) * 4.5);
+  font-size: calc(var(--size) * 4.35);
+  line-height: 1.55;
 }
 
 .text--sm {

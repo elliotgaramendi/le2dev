@@ -24,16 +24,18 @@ const WeekProjectsPage = () => {
     <section className="section">
       <div className="container d-flex fd-column g-3">
         <Link to="/desarrollo-frontend" className="link text text--sm c-primary">← Volver a semanas</Link>
-        <h1 className="title title--lg">{week.title}</h1>
-        <p className="text text--md c-ash300">{week.projects.length} proyectos detectados dentro de `public/content/desarrollo-frontend`.</p>
+        <div className="section-head d-flex fd-column g-1">
+          <h1 className="title title--lg">{week.title}</h1>
+          <p className="text text--md c-ash300">{week.projects.length} proyectos detectados dentro de `public/content/desarrollo-frontend`.</p>
+        </div>
         <div className="d-flex fw-wrap g-2">
           {previousWeek ? (
-            <Link to={`/desarrollo-frontend/${previousWeek.slug}`} className="button interactive w-fit">
+            <Link to={`/desarrollo-frontend/${previousWeek.slug}`} className="button button--subtle interactive w-fit">
               ← {previousWeek.title}
             </Link>
           ) : null}
           {nextWeek ? (
-            <Link to={`/desarrollo-frontend/${nextWeek.slug}`} className="button interactive w-fit">
+            <Link to={`/desarrollo-frontend/${nextWeek.slug}`} className="button button--subtle interactive w-fit">
               {nextWeek.title} →
             </Link>
           ) : null}

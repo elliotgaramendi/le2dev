@@ -9,7 +9,7 @@ main {
 }
 
 .section {
-  padding-block: calc(var(--space) * 8);
+  padding-block: calc(var(--space) * 9);
 }
 
 .section--compact {
@@ -25,7 +25,7 @@ main {
 }
 
 .breadcrumbs {
-  padding-top: calc(var(--space) * 2.5);
+  padding-top: calc(var(--space) * 2);
   padding-bottom: 0;
 }
 
@@ -37,7 +37,7 @@ main {
 }
 
 .footer__top {
-  padding-block: calc(var(--space) * 8);
+  padding-block: calc(var(--space) * 9);
 }
 
 .footer__bottom {

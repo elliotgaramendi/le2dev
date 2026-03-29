@@ -5,9 +5,11 @@ const WeekListPage = () => {
   return (
     <section className="section">
       <div className="container d-flex fd-column g-3">
-        <p className="text text--xs c-primary">Roadmap completo</p>
-        <h1 className="title title--lg">Desarrollo Frontend Ordenado por Semana</h1>
-        <p className="text text--md c-ash300">Contenido centralizado en `public/content/desarrollo-frontend`, listo para despliegue estático y migración futura a CMS.</p>
+        <div className="section-head d-flex fd-column g-1">
+          <p className="text text--xs c-primary">Roadmap completo</p>
+          <h1 className="title title--lg">Desarrollo Frontend Ordenado por Semana</h1>
+          <p className="text text--md c-ash300">Contenido centralizado en `public/content/desarrollo-frontend`, listo para despliegue estático y migración futura a CMS.</p>
+        </div>
         <div className="d-flex fw-wrap g-2">
           <span className="badge interactive interactive--sm">Semanas: {weeksCatalog.length}</span>
           <span className="badge interactive interactive--sm">Proyectos: {weeksCatalog.reduce((total, week) => total + week.projects.length, 0)}</span>

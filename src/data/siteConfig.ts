@@ -88,9 +88,8 @@ export const coursesConfig: Course[] = [
 export const navConfig = {
   brand: 'Le2Dev',
   links: [
-    { label: 'Cursos', path: '/' },
-    { label: 'Retos', path: '/desarrollo-frontend' },
-    { label: 'Proyectos', path: '/desarrollo-frontend' },
+    { label: 'Inicio', path: '/' },
+    { label: 'Roadmap', path: '/desarrollo-frontend' },
   ],
   cta: { label: 'Iniciar sesión', path: '#' },
 }

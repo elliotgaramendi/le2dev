@@ -15,6 +15,7 @@ const SiteHeader = () => {
             <li key={link.label}>
               <NavLink
                 to={link.path}
+                end={link.path === '/'}
                 className={({ isActive }) =>
                   `link interactive interactive--sm header__link ${isActive ? 'c-white header__link--active' : 'c-ash200'}`
                 }

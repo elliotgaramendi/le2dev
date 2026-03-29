@@ -2,10 +2,6 @@ import { Link, useLocation } from 'react-router'
 import { weeksCatalog } from '../../data/siteConfig'
 
 const getSegmentLabel = (segment: string, parent?: string) => {
-  if (segment === 'frontend') {
-    return 'Cursos'
-  }
-
   if (segment === 'desarrollo-frontend') {
     return 'Desarrollo Frontend'
   }
@@ -29,7 +25,7 @@ const Breadcrumbs = () => {
     <nav aria-label="Breadcrumb" className="container breadcrumbs section--compact">
       <ol className="list d-flex fw-wrap ai-center g-1">
         <li>
-          <Link to="/" className="link text text--xs c-ash300 breadcrumbs__link">
+          <Link to="/" className="link text text--xs c-ash300 breadcrumbs__link d-flex ai-center g-1">
             Inicio
           </Link>
         </li>

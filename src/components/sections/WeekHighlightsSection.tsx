@@ -8,9 +8,11 @@ const WeekHighlightsSection = () => {
   return (
     <section className="section">
       <div className="container d-flex fd-column g-3">
-        <p className="text text--xs c-primary">Ruta guiada</p>
-        <h2 className="title title--lg">Explora el plan por semanas</h2>
-        <p className="text text--md c-ash300">Cada semana agrupa sus ejercicios y proyectos para avanzar con orden y enfoque práctico.</p>
+        <div className="section-head d-flex fd-column g-1">
+          <p className="text text--xs c-primary">Ruta guiada</p>
+          <h2 className="title title--lg">Explora el plan por semanas</h2>
+          <p className="text text--md c-ash300">Cada semana agrupa sus ejercicios y proyectos para avanzar con orden y enfoque práctico.</p>
+        </div>
         <div className="g-layout g-layout--auto-fit-columns g-3">
           {highlightWeeks.map((week) => (
             <WeekCard key={week.id} week={week} />

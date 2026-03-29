@@ -9,15 +9,15 @@ const CourseCard = ({ course }: CourseCardProps) => {
   const content = (
     <article className="card__content d-flex fd-column g-2">
       <img src={course.image} alt={course.title} width="426" height="240" className="image image--background" />
-      <ul className="d-flex fw-wrap g-1 list">
+      <ul className="d-flex fw-wrap g-1 list card__tags">
         {course.tags.map((tag) => (
           <li key={tag} className="badge interactive interactive--sm">
             {tag}
           </li>
         ))}
       </ul>
-      <h3 className="title title--xs c-white">{course.title}</h3>
-      <p className="text text--sm c-white">{course.description}</p>
+      <h3 className="title title--xs c-white card__title">{course.title}</h3>
+      <p className="text text--sm c-white card__summary">{course.description}</p>
     </article>
   )
 
