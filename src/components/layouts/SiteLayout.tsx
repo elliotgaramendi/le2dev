@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router'
 import SiteHeader from './SiteHeader'
 import SiteFooter from './SiteFooter'
 import ScrollToTop from '../common/ScrollToTop'

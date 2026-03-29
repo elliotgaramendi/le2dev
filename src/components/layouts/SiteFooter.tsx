@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 import { coursesConfig } from '../../data/siteConfig'
 import LogoMark from '../common/LogoMark'
 
@@ -15,7 +15,7 @@ const SiteFooter = () => {
         </div>
         <div className="d-flex fd-column g-2">
           <h3 className="subtitle subtitle--xs">Le2Dev</h3>
-          <Link to="/frontend" className="link text text--xs c-ash300">Cursos</Link>
+          <Link to="/" className="link text text--xs c-ash300">Cursos</Link>
           <Link to="/desarrollo-frontend" className="link text text--xs c-ash300">Proyectos</Link>
         </div>
         <div className="d-flex fd-column g-2">

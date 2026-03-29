@@ -1,26 +1,12 @@
-import { useEffect, useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router'
 import { navConfig } from '../../data/siteConfig'
 import LogoMark from '../common/LogoMark'
 
 const SiteHeader = () => {
-  const [isScrolled, setIsScrolled] = useState(false)
-
-  useEffect(() => {
-    const onScroll = () => {
-      setIsScrolled(window.scrollY > 16)
-    }
-
-    onScroll()
-    window.addEventListener('scroll', onScroll, { passive: true })
-
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [])
-
   return (
-    <header className={`header ${isScrolled ? 'header--scrolled' : ''}`}>
-      <nav className="container d-flex ai-center jc-space-between g-2">
-        <NavLink to="/frontend" className="link d-flex ai-center g-1 brand-link">
+    <header className="header">
+      <nav className="nav nav--scroll container d-flex ai-center jc-space-between g-2">
+        <NavLink to="/" className="link d-flex ai-center g-1 brand-link">
           <LogoMark />
           <span className="interactive interactive--sm c-ash200">{navConfig.brand}</span>
         </NavLink>

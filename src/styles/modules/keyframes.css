@@ -1,0 +1,53 @@
+@keyframes change-length {
+  from {
+    --length: var(--initial-length);
+  }
+
+  to {
+    --length: var(--final-length);
+  }
+}
+
+@keyframes change-color {
+  from {
+    --color: var(--initial-color);
+  }
+
+  to {
+    --color: var(--final-color);
+  }
+}
+
+@keyframes change-border-color {
+  from {
+    --border-color: var(--initial-border-color);
+  }
+
+  to {
+    --border-color: var(--final-border-color);
+  }
+}
+
+@keyframes footer-glow {
+  from {
+    border-top-color: var(--stroke-color);
+    box-shadow: none;
+  }
+
+  to {
+    border-top-color: rgb(33 182 249 / 45%);
+    box-shadow: 0 -12px 36px -22px var(--glow-color);
+  }
+}
+
+@keyframes reveal-card {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

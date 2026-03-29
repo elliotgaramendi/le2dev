@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router'
 import { weeksCatalog } from '../../data/siteConfig'
 
 const baseTitle = 'Le2Dev | Desarrollo Frontend'
@@ -8,7 +8,7 @@ const RouteMeta = () => {
   const { pathname } = useLocation()
 
   useEffect(() => {
-    if (pathname === '/frontend' || pathname === '/') {
+    if (pathname === '/') {
       document.title = `${baseTitle} | Inicio`
       return
     }

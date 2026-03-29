@@ -1,0 +1,17 @@
+@property --length {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 0px;
+}
+
+@property --color {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: transparent;
+}
+
+@property --border-color {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: transparent;
+}

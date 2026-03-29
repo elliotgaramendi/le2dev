@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 import type { Course } from '../../data/siteConfig'
 
 type CourseCardProps = {

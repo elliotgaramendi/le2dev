@@ -14,6 +14,8 @@
   --stroke-color: rgb(216 226 238 / 18%);
   --shadow-color: rgb(1 6 14 / 35%);
   --glow-color: rgb(33 182 249 / 30%);
+  --shadow: rgb(1 6 14 / 30%);
+  --light-shadow: rgb(3 10 19 / 74%);
 
   --size: 0.25rem;
   --space: 0.25rem;

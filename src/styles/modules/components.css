@@ -1,5 +1,47 @@
+.header {
+  --initial-length: 0px;
+  --final-length: var(--size);
+  --length: var(--initial-length);
+  --initial-color: transparent;
+  --final-color: var(--light-shadow);
+  --color: var(--initial-color);
+  --initial-border-color: transparent;
+  --final-border-color: var(--stroke-color);
+  --border-color: var(--initial-border-color);
+  position: fixed;
+  z-index: 30;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 0 calc(var(--length) * 0.5) calc(var(--length) * 0.125) var(--shadow);
+  background-color: var(--color);
+  backdrop-filter: blur(calc(var(--length) * 6));
+}
+
+.nav {
+  padding-block: calc(var(--size) * 4);
+}
+
+.nav--scroll {
+  --initial-length: calc(var(--size) * 6);
+  --final-length: calc(var(--size) * 4);
+  --length: var(--initial-length);
+  padding-block: var(--length);
+  animation: change-length linear forwards;
+  animation-timeline: scroll();
+  animation-range: 0 calc(var(--size) * 64);
+}
+
+@supports (animation-timeline: scroll()) {
+  .header {
+    animation: change-length linear forwards, change-color linear forwards, change-border-color linear forwards;
+    animation-timeline: scroll();
+    animation-range: 0 calc(var(--size) * 64);
+  }
+}
+
 .hero {
-  padding-top: calc(var(--space) * 14);
+  padding-top: calc(var(--space) * 4);
 }
 
 .skip-link {
@@ -88,8 +130,7 @@
 
 .card--surface {
   padding: calc(var(--space) * 4);
-  background:
-    linear-gradient(180deg, rgb(17 31 48 / 98%), rgb(12 21 32 / 98%));
+  background: linear-gradient(180deg, rgb(17 31 48 / 98%), rgb(12 21 32 / 98%));
 }
 
 .card--project {
@@ -114,6 +155,15 @@
   padding: calc(var(--space) * 3);
 }
 
+.card--overlay .image--background {
+  transition: transform 480ms ease, opacity 480ms ease;
+}
+
+.card--overlay:hover .image--background {
+  transform: scale(1.06);
+  opacity: 0.84;
+}
+
 .card--overlay .badge {
   background-color: rgb(33 182 249 / 96%);
 }
@@ -134,8 +184,8 @@
   z-index: -1;
   width: 100%;
   height: 100%;
+  opacity: 0.75;
   object-fit: cover;
-  opacity: 0.5;
 }
 
 .badge {
@@ -193,18 +243,6 @@
   }
 }
 
-@keyframes reveal-card {
-  from {
-    opacity: 0;
-    transform: translateY(20px) scale(0.98);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
 @media (width <768px) {
   .header__links {
     margin-inline: 0;
@@ -217,6 +255,6 @@
   }
 
   .hero {
-    padding-top: calc(var(--space) * 10);
+    padding-top: calc(var(--space) * 2);
   }
 }

@@ -1,4 +1,4 @@
-import { Link, useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router'
 import ProjectCard from '../components/common/ProjectCard'
 import { weeksCatalog } from '../data/siteConfig'
 

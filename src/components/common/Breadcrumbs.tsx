@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router'
 import { weeksCatalog } from '../../data/siteConfig'
 
 const getSegmentLabel = (segment: string, parent?: string) => {
@@ -21,7 +21,7 @@ const Breadcrumbs = () => {
   const { pathname } = useLocation()
   const segments = pathname.split('/').filter(Boolean)
 
-  if (segments.length === 0 || pathname === '/frontend') {
+  if (segments.length === 0 || pathname === '/') {
     return null
   }
 
@@ -29,7 +29,7 @@ const Breadcrumbs = () => {
     <nav aria-label="Breadcrumb" className="container breadcrumbs section--compact">
       <ol className="list d-flex fw-wrap ai-center g-1">
         <li>
-          <Link to="/frontend" className="link text text--xs c-ash300 breadcrumbs__link">
+          <Link to="/" className="link text text--xs c-ash300 breadcrumbs__link">
             Inicio
           </Link>
         </li>
