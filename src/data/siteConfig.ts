@@ -47,7 +47,7 @@ export const coursesConfig: Course[] = [
     title: 'Diseño UX-UI',
     description:
       'Crea interfaces atractivas y enfocadas en la experiencia del usuario, dominando prototipado y arquitectura de información.',
-    image: 'https://sourcemediakw.com/wp-content/uploads/2023/04/UIUX-1024x536.png',
+    image: 'https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/4087169/cover_image/retina_1708x683/cover-ux-designer-portfolios-0f004b84f72a44e315507b1eac42a084.png',
     tags: ['User Research', 'Figma', 'Prototyping'],
   },
   {
